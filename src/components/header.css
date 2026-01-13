@@ -1,0 +1,63 @@
+.header header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  transition: background 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+
+.header-left {
+  display: flex;
+  align-items: center;
+   line-height: 1.3;
+  gap: 8px;
+}
+
+.header-left h1 {
+  margin: 0   !important;     /* Gereksiz boşlukları kaldır */
+  font-size: 46px  !important;  /* İstediğin boyut */
+   font-weight: lighter;
+}
+
+.header-left h2 {
+  margin: 0 !important;         /* Gereksiz boşlukları kaldır */
+  font-size: 34px !important;
+  display:flex;  
+  font-weight: bold;
+}
+
+.header-right {
+  align-items: center;         /* İçeriği yatayda hizalamak için */
+  margin-left: auto;   /* Dikey ortalama */
+  gap: 10px;              /* Sıcaklık ve emoji arasına boşluk */
+  
+  font-size: 24px;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+
+/* HAVA DURUMUNA GÖRE ARKAPLANLAR Bunun yerine görsel ekliyorum artık
+
+.sunny {
+  background: linear-gradient(90deg, #fbc531, #e1b12c);
+}
+.rainy {
+  background: linear-gradient(90deg, #2f3640, #353b48);
+}
+.snowy {
+  background: linear-gradient(90deg, #dcdde1, #7f8fa6);
+  color: #2f3640;
+}
+.mild {
+  background: linear-gradient(90deg, #44bd32, #4cd137);
+}
+*/

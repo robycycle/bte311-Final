@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* Görselin üstüne koyu katman (okunabilirlik için) */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.header > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* 🌤️ GÜNEŞLİ */
+.header-clear {
+  background-image: url("/assets/sunny.png");
+}
+
+/* ☁️ BULUTLU */
+.header-clouds {
+  background-image: url("/assets/cloudy.png");
+}
+
+/* 🌧️ YAĞMURLU */
+.header-rain {
+  background-image: url("/assets/rainy.png");
+}
+
+/* ❄️ KARLI */
+.header-snow {
+  background-image: url("/assets/snowy.png");
+}
+
+.icon {
+  font-size: 72px;
+  margin-top: 4px;
+}
+
+.popup {
+  position: relative;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  pointer-events: none;
+  position: "fixed",
+}
+      
+
+.popup::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.close-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+
+
