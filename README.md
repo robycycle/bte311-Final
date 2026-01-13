@@ -36,6 +36,3 @@ Ekran Görüntüsü:
 
 Ders Sorumlusu: Dr. Esra KIDIMAN DEMİRHAN
 Geliştirici: Nurbanu Polat
-
-Ekran Görüntüsü:
-(Buraya uygulamanın harita ve analiz kartını içeren bir görselini ekleyiniz)
